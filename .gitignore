@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+tmp/
+notes/*.aux
+notes/*.fdb_latexmk
+notes/*.fls
+notes/*.log
+notes/*.out
+notes/*.toc
+notes/*.xdv
