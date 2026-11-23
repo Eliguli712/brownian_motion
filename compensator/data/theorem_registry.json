@@ -1,0 +1,158 @@
+[
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.digital_bounds"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.digital_measurable"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.atom_measurable"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.atomEnvelope_nonneg"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.atom_growth"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.payoff_measurable"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.envelope_nonneg"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.payoff_linear_growth"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.atom_original_indicator"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.primitive_zero"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.primitive_hasDerivAt"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.primitive_deriv"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.primitive_second_deriv"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.weighted_integration_by_parts"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.generator_cancellation"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.integrand_square_bound"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.integrated_moment_majorant"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.compensated_path_identity"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.brownian_finite_moments"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.terminal_payoff_memLp"
+  },
+  {
+    "module": "CompensatorCore.lean",
+    "theorem": "BrownianCompensator.terminal_payoff_condExp_martingale"
+  },
+  {
+    "module": "HeatKernel.lean",
+    "theorem": "BrownianCompensator.kernel_exponent_time"
+  },
+  {
+    "module": "HeatKernel.lean",
+    "theorem": "BrownianCompensator.kernel_exponent_space"
+  },
+  {
+    "module": "HeatKernel.lean",
+    "theorem": "BrownianCompensator.kernel_time_hasDerivAt"
+  },
+  {
+    "module": "HeatKernel.lean",
+    "theorem": "BrownianCompensator.kernel_space_hasDerivAt"
+  },
+  {
+    "module": "HeatKernel.lean",
+    "theorem": "BrownianCompensator.kernel_space_deriv"
+  },
+  {
+    "module": "HeatKernel.lean",
+    "theorem": "BrownianCompensator.kernel_second_deriv"
+  },
+  {
+    "module": "HeatKernel.lean",
+    "theorem": "BrownianCompensator.kernel_heat_equation"
+  },
+  {
+    "module": "HeatKernel.lean",
+    "theorem": "BrownianCompensator.kernel_backward_heat"
+  },
+  {
+    "module": "QuadraticTest.lean",
+    "theorem": "BrownianQuadraticTest.gaussian_second_moment"
+  },
+  {
+    "module": "QuadraticTest.lean",
+    "theorem": "BrownianQuadraticTest.gaussian_convolution_square"
+  },
+  {
+    "module": "QuadraticTest.lean",
+    "theorem": "BrownianQuadraticTest.quadraticS_time_derivative"
+  },
+  {
+    "module": "QuadraticTest.lean",
+    "theorem": "BrownianQuadraticTest.quadraticS_space_derivative"
+  },
+  {
+    "module": "QuadraticTest.lean",
+    "theorem": "BrownianQuadraticTest.quadraticS_second_derivative"
+  },
+  {
+    "module": "QuadraticTest.lean",
+    "theorem": "BrownianQuadraticTest.quadratic_backward_heat"
+  },
+  {
+    "module": "QuadraticTest.lean",
+    "theorem": "BrownianQuadraticTest.integrand_polynomial_bound"
+  },
+  {
+    "module": "QuadraticTest.lean",
+    "theorem": "BrownianQuadraticTest.brownian_finite_moments"
+  },
+  {
+    "module": "QuadraticTest.lean",
+    "theorem": "BrownianQuadraticTest.brownian_L4"
+  },
+  {
+    "module": "QuadraticTest.lean",
+    "theorem": "BrownianQuadraticTest.quadratic_gaussian_representation"
+  }
+]

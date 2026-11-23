@@ -123,3 +123,15 @@ the notes is analytic.
 ## License
 
 Released under the [MIT License](LICENSE).
+
+
+## Brownian functional and predictable compensator
+
+The [compensator project](compensator/) contains a complete analytic solution
+for the recorded nonsmooth payoff, 39 compiled Lean component theorems,
+reproducible numerical experiments, and a vector proof-dependency map.
+The [Lean source](compensator/Brownian_Compensator_Verified_Components.lean) and
+[verification workflow](https://github.com/Eliguli712/brownian_motion/actions/workflows/brownian-compensator-lean.yml)
+check the included components. The full stochastic-integral compensator theorem
+remains an open Lean formalization obligation; the exact boundary is listed in
+[the verification ledger](compensator/VERIFICATION.md).

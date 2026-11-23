@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1390" viewBox="0 0 1200 1390" role="img" aria-labelledby="title desc">
+<title id="title">Proof map: a Brownian functional and its predictable compensator</title>
+<desc id="desc">The central spine goes from the original nonsmooth payoff through Gaussian smoothing and the spatial primitive to the Ito decomposition and an L2 martingale. Side branches give kernel derivatives, growth and energy bounds, and the terminal extension. Solid teal bubbles identify compiled component statements under their stated hypotheses. Dashed amber bubbles identify analytic steps whose full Lean formalization remains open.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="#64798B"/></marker></defs>
+<rect width="1200" height="1390" fill="white"/>
+<text x="600" y="38" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="30" font-weight="bold" fill="#173756">A Brownian functional and its compensator</text>
+<text x="600" y="72" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" fill="#536475">The analytic proof, its dependencies, and the precise Lean verification boundary</text>
+<ellipse cx="224" cy="105" rx="18" ry="9" fill="#EAF5F4" stroke="#19766F" stroke-width="2"/>
+<text x="250" y="111" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#173756">Compiled component statement</text>
+<ellipse cx="684" cy="105" rx="18" ry="9" fill="#FFF7E8" stroke="#A17E34" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="710" y="111" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#173756">Analytic link awaiting formalization</text>
+<path d="M600 272 L600 318" fill="none" stroke="#64798B" stroke-width="2.3" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<path d="M790 200 L840 200" fill="none" stroke="#64798B" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M350 400 L395 400" fill="none" stroke="#64798B" stroke-width="2.3" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<path d="M1000 265 L1000 375" fill="none" stroke="#64798B" stroke-width="2.3" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<path d="M600 482 L600 565" fill="none" stroke="#64798B" stroke-width="2.3" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<path d="M1000 555 L1000 650" fill="none" stroke="#64798B" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M600 735 L600 820" fill="none" stroke="#64798B" stroke-width="2.3" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<path d="M600 980 L600 1065" fill="none" stroke="#64798B" stroke-width="2.3" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<path d="M1000 810 C1000 1060,1045 1160,842 1160" fill="none" stroke="#64798B" stroke-width="2.3" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<path d="M355 940 C390 940,358 1040,375 1128" fill="none" stroke="#64798B" stroke-width="2.3" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<path d="M410 680 C240 680,190 710,190 850" fill="none" stroke="#64798B" stroke-width="2.3" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<ellipse cx="600" cy="200" rx="190" ry="72" fill="#EAF5F4" stroke="#19766F" stroke-width="2.4"/>
+<text x="600" y="155" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="bold" fill="#19766F">LEAN-CHECKED COMPONENT</text>
+<text x="600" y="185" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="bold" fill="#173756">Original payoff g</text>
+<text x="600" y="213" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#536475">finite max / indicator sum</text>
+<text x="600" y="241" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#536475">measurability + growth</text>
+<ellipse cx="1000" cy="200" rx="160" ry="65" fill="#EAF5F4" stroke="#19766F" stroke-width="2.4"/>
+<text x="1000" y="162" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="bold" fill="#19766F">LEAN-CHECKED COMPONENT</text>
+<text x="1000" y="185" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="bold" fill="#173756">Payoff envelope</text>
+<text x="1000" y="213" text-anchor="middle" font-family="Latin Modern Math, DejaVu Serif" font-size="21" font-weight="normal" fill="#173756">|g(x)| ≤ A + |x|/4</text>
+<ellipse cx="190" cy="400" rx="160" ry="70" fill="#EAF5F4" stroke="#19766F" stroke-width="2.4"/>
+<text x="190" y="357" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="bold" fill="#19766F">LEAN-CHECKED COMPONENT</text>
+<text x="190" y="385" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="bold" fill="#173756">Heat-kernel PDE</text>
+<text x="190" y="413" text-anchor="middle" font-family="Latin Modern Math, DejaVu Serif" font-size="21" font-weight="normal" fill="#173756">∂ᵥp = ½ ∂ₓₓp</text>
+<text x="190" y="441" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#536475">actual kernel derivatives</text>
+<ellipse cx="600" cy="400" rx="205" ry="82" fill="#FFF7E8" stroke="#A17E34" stroke-width="2.4" stroke-dasharray="10 7"/>
+<text x="600" y="345" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="bold" fill="#A17E34">ANALYTIC STEP / LEAN OPEN</text>
+<text x="600" y="373" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="bold" fill="#173756">(a) Gaussian smoothing</text>
+<text x="600" y="401" text-anchor="middle" font-family="Latin Modern Math, DejaVu Serif" font-size="21" font-weight="normal" fill="#173756">S(t,x) = E[g(x + σ Z)]</text>
+<text x="600" y="429" text-anchor="middle" font-family="Latin Modern Math, DejaVu Serif" font-size="21" font-weight="normal" fill="#173756">σ² = T − t</text>
+<text x="600" y="457" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#536475">differentiate the original convolution</text>
+<ellipse cx="1000" cy="465" rx="160" ry="90" fill="#EAF5F4" stroke="#19766F" stroke-width="2.4"/>
+<text x="1000" y="402" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="bold" fill="#19766F">LEAN-CHECKED COMPONENT</text>
+<text x="1000" y="450" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="bold" fill="#173756">Pointwise energy</text>
+<text x="1000" y="478" text-anchor="middle" font-family="Latin Modern Math, DejaVu Serif" font-size="21" font-weight="normal" fill="#173756">H² ≤ 2C²(W² + W⁴)</text>
+<text x="1000" y="506" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#536475">under |S(t,x)| ≤ C(1+|x|)</text>
+<ellipse cx="600" cy="650" rx="210" ry="85" fill="#EAF5F4" stroke="#19766F" stroke-width="2.4"/>
+<text x="600" y="592" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="bold" fill="#19766F">LEAN-CHECKED COMPONENT</text>
+<text x="600" y="623" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="bold" fill="#173756">(b) Primitive + generator</text>
+<text x="600" y="651" text-anchor="middle" font-family="Latin Modern Math, DejaVu Serif" font-size="21" font-weight="normal" fill="#173756">F(t,x) = ∫₀ˣ r S(t,r) dr</text>
+<text x="600" y="679" text-anchor="middle" font-family="Latin Modern Math, DejaVu Serif" font-size="21" font-weight="normal" fill="#173756">Fₜ + ½ Fₓₓ = S(t,x) − ½ S(t,0)</text>
+<text x="600" y="707" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#536475">FTC / IBP + algebra; given derivatives</text>
+<ellipse cx="1000" cy="730" rx="160" ry="80" fill="#EAF5F4" stroke="#19766F" stroke-width="2.4"/>
+<text x="1000" y="677" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="bold" fill="#19766F">LEAN-CHECKED COMPONENT</text>
+<text x="1000" y="715" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="bold" fill="#173756">Time majorant</text>
+<text x="1000" y="743" text-anchor="middle" font-family="Latin Modern Math, DejaVu Serif" font-size="21" font-weight="normal" fill="#173756">∫₀ᵀ 2C²(s + 3s²) ds</text>
+<text x="1000" y="771" text-anchor="middle" font-family="Latin Modern Math, DejaVu Serif" font-size="21" font-weight="normal" fill="#173756">= C²(T² + 2T³)</text>
+<ellipse cx="600" cy="900" rx="205" ry="80" fill="#FFF7E8" stroke="#A17E34" stroke-width="2.4" stroke-dasharray="10 7"/>
+<text x="600" y="847" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="bold" fill="#A17E34">ANALYTIC STEP / LEAN OPEN</text>
+<text x="600" y="885" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="bold" fill="#173756">(c) Itô decomposition</text>
+<text x="600" y="913" text-anchor="middle" font-family="Latin Modern Math, DejaVu Serif" font-size="21" font-weight="normal" fill="#173756">Pₜ = Kₜ + ∫₀ᵗ Hₛ dWₛ</text>
+<text x="600" y="941" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#536475">construct the integral + apply Itô</text>
+<ellipse cx="190" cy="940" rx="165" ry="90" fill="#FFF7E8" stroke="#A17E34" stroke-width="2.4" stroke-dasharray="10 7"/>
+<text x="190" y="877" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="bold" fill="#A17E34">ANALYTIC STEP / LEAN OPEN</text>
+<text x="190" y="925" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="bold" fill="#173756">Terminal extension</text>
+<text x="190" y="953" text-anchor="middle" font-family="Latin Modern Math, DejaVu Serif" font-size="21" font-weight="normal" fill="#173756">Pₜ → ∫₀ᵂᵀ r g(r) dr</text>
+<text x="190" y="981" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#536475">L² limits + finite variation</text>
+<ellipse cx="600" cy="1160" rx="240" ry="95" fill="#FFF7E8" stroke="#A17E34" stroke-width="2.4" stroke-dasharray="10 7"/>
+<text x="600" y="1092" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="bold" fill="#A17E34">ANALYTIC THEOREM / LEAN OPEN</text>
+<text x="600" y="1133" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="bold" fill="#173756">(d) Compensated martingale</text>
+<text x="600" y="1161" text-anchor="middle" font-family="Latin Modern Math, DejaVu Serif" font-size="21" font-weight="normal" fill="#173756">Mₜ = Pₜ − Kₜ</text>
+<text x="600" y="1189" text-anchor="middle" font-family="Latin Modern Math, DejaVu Serif" font-size="21" font-weight="normal" fill="#173756">E[Mₜ | ℱₛ] = Mₛ    (s ≤ t ≤ T)</text>
+<text x="600" y="1217" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#536475">square-integrable on the closed interval [0,T]</text>
+<text x="600" y="1302" text-anchor="middle" font-family="Latin Modern Math, DejaVu Serif" font-size="27" font-weight="normal" fill="#173756">Kₜ = ∫₀ᵗ [S(s,Wₛ) − ½ S(s,0)] ds</text>
+<text x="600" y="1340" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#536475">Solid bubbles verify their listed component claims under explicit hypotheses.</text>
+<text x="600" y="1365" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" fill="#536475">The complete P − K martingale theorem remains an open Lean formalization obligation.</text>
+</svg>

@@ -1,0 +1,70 @@
+name: Brownian compensator - 39 Lean components
+
+on:
+  push:
+    paths:
+      - 'compensator/**/*.lean'
+      - 'compensator/verify.sh'
+      - 'compensator/lean-toolchain'
+      - '.github/workflows/brownian-compensator-lean.yml'
+  pull_request:
+    paths:
+      - 'compensator/**/*.lean'
+      - 'compensator/verify.sh'
+      - 'compensator/lean-toolchain'
+      - '.github/workflows/brownian-compensator-lean.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-components:
+    name: Compile and audit 39 component theorems
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out the proof source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Install the pinned Lean toolchain
+        run: |
+          curl --fail --silent --show-error --location \
+            https://raw.githubusercontent.com/leanprover/elan/v4.1.2/elan-init.sh \
+            --output /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --default-toolchain leanprover/lean4:v4.36.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Check out the exact Mathlib revision
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          repository: leanprover-community/mathlib4
+          ref: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+          path: .mathlib
+          persist-credentials: false
+      - name: Download the matching imported Mathlib artifacts
+        working-directory: .mathlib
+        run: |
+          lake exe cache get Mathlib.Probability.BrownianMotion.Basic \
+            Mathlib.Probability.Martingale.Basic \
+            Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts \
+            Mathlib.Analysis.SpecialFunctions.Integrals.Basic \
+            Mathlib.Analysis.SpecialFunctions.Log.Deriv \
+            Mathlib.Analysis.SpecialFunctions.ExpDeriv Mathlib.Tactic
+      - name: Compile the exact source and print all theorem axioms
+        shell: bash
+        run: |
+          set -euo pipefail
+          bash compensator/verify.sh "$GITHUB_WORKSPACE/.mathlib" | tee verification.log
+          test "$(grep -c 'depends on axioms:' verification.log)" -eq 39
+          if grep -q 'sorryAx' verification.log; then
+            echo 'A proof placeholder was detected.' >&2
+            exit 1
+          fi
+      - name: Publish the verification log
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: brownian-compensator-component-verification
+          path: verification.log
+          if-no-files-found: warn

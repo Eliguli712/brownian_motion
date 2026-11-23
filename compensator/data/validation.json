@@ -1,0 +1,21 @@
+{
+  "lean_version": "4.36.0",
+  "mathlib_commit": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "included_component_theorems": 39,
+  "combined_compiler_exit_code": 0,
+  "warnings_promoted_to_errors": true,
+  "custom_axioms_or_placeholders": false,
+  "full_compensator_martingale_in_lean": "open",
+  "analytic_proof_parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "paper_pages": 12,
+  "numerical_figure_groups": 6,
+  "numerics_assertions_passed": true,
+  "latex_overfull_boxes": 0,
+  "embedded_fonts_checked": true,
+  "visual_review": "all pages contact sheet, first and table pages enlarged"
+}
