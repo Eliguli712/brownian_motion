@@ -135,3 +135,7 @@ The [Lean source](compensator/Brownian_Compensator_Verified_Components.lean) and
 check the included components. The full stochastic-integral compensator theorem
 remains an open Lean formalization obligation; the exact boundary is listed in
 [the verification ledger](compensator/VERIFICATION.md).
+
+Read the [English compensator paper](compensator/paper.pdf), including the
+[editable SVG proof map](compensator/figures/proof_map.svg), the fixed source
+commit and the successful CI verification link.

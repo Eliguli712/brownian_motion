@@ -1,0 +1,10 @@
+{
+  "repository": "Eliguli712/brownian_motion",
+  "proof_commit": "73a1d2ff4f3125264fe3d2e9d1daa013fd31582e",
+  "proof_source_url": "https://github.com/Eliguli712/brownian_motion/blob/73a1d2ff4f3125264fe3d2e9d1daa013fd31582e/compensator/Brownian_Compensator_Verified_Components.lean",
+  "workflow_run_id": 45158953034,
+  "workflow_run_url": "https://github.com/Eliguli712/brownian_motion/actions/runs/45158953034",
+  "conclusion": "success",
+  "verified_component_theorems": 39,
+  "svg_source_url": "https://github.com/Eliguli712/brownian_motion/blob/73a1d2ff4f3125264fe3d2e9d1daa013fd31582e/compensator/figures/proof_map.svg"
+}

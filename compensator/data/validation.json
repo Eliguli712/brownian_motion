@@ -12,10 +12,14 @@
     "c",
     "d"
   ],
-  "paper_pages": 12,
+  "paper_pages": 14,
   "numerical_figure_groups": 6,
   "numerics_assertions_passed": true,
   "latex_overfull_boxes": 0,
   "embedded_fonts_checked": true,
-  "visual_review": "all pages contact sheet, first and table pages enlarged"
+  "visual_review": "all final pages and enlarged proof map / reproduction pages",
+  "proof_map_svg_embedded_as_vector": true,
+  "github_component_workflow_conclusion": "success",
+  "github_component_workflow_run": 45158953034,
+  "github_proof_commit": "73a1d2ff4f3125264fe3d2e9d1daa013fd31582e"
 }

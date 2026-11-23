@@ -13,6 +13,15 @@ formalization obligation. `VERIFICATION.md` and the paper specify the exact
 coverage. The numerical experiments and quadratic test theorems have separate
 roles and are labeled accordingly.
 
+## Published paper and permanent proof links
+
+- [English paper with vector proof map](paper.pdf).
+- [Permanent Lean source](https://github.com/Eliguli712/brownian_motion/blob/73a1d2ff4f3125264fe3d2e9d1daa013fd31582e/compensator/Brownian_Compensator_Verified_Components.lean).
+- [Successful verification run](https://github.com/Eliguli712/brownian_motion/actions/runs/45158953034).
+- [Extracted CI compiler and axiom log](logs/github_actions_verification.log).
+
+The paper fixes the proof version to commit `73a1d2ff4f3125264fe3d2e9d1daa013fd31582e` and includes the exact reproduction commands. The verification concerns 39 component statements; the full compensator theorem retains the open obligations in the ledger.
+
 ## Proof dependency map
 
 ![Proof dependency map](figures/proof_map.svg)
@@ -32,8 +41,8 @@ Dashed amber bubbles indicate analytic links whose full Lean formalization remai
 - `numerics.py`: full numerical computation and figure-generation source.
 - `build_report.py`: regenerate table macros from metrics and compile the paper.
 - `data/`: numerical summaries, CSV tables and 32 example paths.
-- `figures/`: six publication figures, each supplied as PDF and PNG.
-- `SHA256SUMS.txt`: content hashes for the final package files.
+- `figures/`: the editable SVG proof map and its vector PDF; `numerics.py` regenerates all six numerical PDF/PNG figure pairs embedded in the paper.
+- The downloadable paper is accompanied by its LaTeX source and reproducible numerical scripts.
 
 ## Compile the Lean proof source
 
@@ -68,7 +77,7 @@ python3 proof_map.py
 python3 build_report.py
 ```
 
-Use a working XeLaTeX or Tectonic installation. Required fonts are Latin Modern
+Use a working XeLaTeX or Tectonic installation and Inkscape for the SVG vector conversion. Required fonts are Latin Modern
 Roman, Latin Modern Math and DejaVu Sans/Mono; figures use Matplotlib's STIX fonts.
 The original numerical run used Python 3.12.14. CPU/library changes can affect
 the final floating-point digits. The parameter choices and seed are explicit in
